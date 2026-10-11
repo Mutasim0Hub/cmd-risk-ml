@@ -163,10 +163,3 @@ MALICIOUS (ml)
 
 For **academic and research purposes only**.
 Do not execute destructive commands on live systems.
-
----
-
-## 👨‍💻 Author
-
-Security-focused ML engineer. Contributions and research collaboration are welcome.
-
